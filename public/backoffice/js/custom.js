@@ -1,30 +1,30 @@
 $(document).ready(function () {
     $('#input-1').rating();
-    $('.rating-container').addClass('kl-star-custom');
-    $('.rating-container').find('.star').addClass('kl-star');
-    $('.rating-container').find('.caption').addClass('kl-star-caption');
-    $('.rating-container').find('.clear-rating').addClass('kl-clear-rating');
-    $('.table').find('.star').addClass('kl-star');
-    $('.kl-td').find('.btn-primary').addClass('green');
-    $('.select2-container').addClass('kl-select');
-    $('.box-header').find('.box-title').addClass('kl-box-title');
-    $('.box-body').find('h4').addClass('kl-custom-h4');
-    $('.form-group').find('.col.s12').addClass('kl-custom-col');
-    $('.box-footer').find('.btn').addClass('kl-btn-footer');
+    $('.rating-container').addClass('sk-star-custom');
+    $('.rating-container').find('.star').addClass('sk-star');
+    $('.rating-container').find('.caption').addClass('sk-star-caption');
+    $('.rating-container').find('.clear-rating').addClass('sk-clear-rating');
+    $('.table').find('.star').addClass('sk-star');
+    $('.sk-td').find('.btn-primary').addClass('green');
+    $('.select2-container').addClass('sk-select');
+    $('.box-header').find('.box-title').addClass('sk-box-title');
+    $('.box-body').find('h4').addClass('sk-custom-h4');
+    $('.form-group').find('.col.s12').addClass('sk-custom-col');
+    $('.box-footer').find('.btn').addClass('sk-btn-footer');
     $('.box-footer').addClass('text-right');
     $('.box-footer').find('.btn').removeClass('pull-left');
-    $('.modal-body').find('.kl-body').addClass('kl-body-modal');
-    $('.kl-resp-input').find('input').addClass('kl-resp-input-child');
-    $('.kl-emp-input').find('input').addClass('kl-resp-input-child');
-    $('.dataTables_processing').addClass('kl-chargement');
+    $('.modal-body').find('.sk-body').addClass('sk-body-modal');
+    $('.sk-resp-input').find('input').addClass('sk-resp-input-child');
+    $('.sk-emp-input').find('input').addClass('sk-resp-input-child');
+    $('.dataTables_processing').addClass('sk-chargement');
 
     $(window).resize(function () {
         if ($(window).width()<= 700){
-            $('.kl-fct-show-content').text(' + Fonction');
+            $('.sk-fct-show-content').text(' + Fonction');
         }
         if ($(window).width()<= 440 ){
-            $('.kl-add-btn-top-list button').text('+ Nouveau ');
-            $('.kl-delete-btn').text('Supprimer ');
+            $('.sk-add-btn-top-list button').text('+ Nouveau ');
+            $('.sk-delete-btn').text('Supprimer ');
         }
     });
     // $('.modal-body').mCustomScrollbar();

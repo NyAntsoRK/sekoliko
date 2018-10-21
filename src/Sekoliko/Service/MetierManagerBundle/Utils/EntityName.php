@@ -12,9 +12,11 @@ class EntityName
     const Sekoliko_USER_ROLE = 'MetierManagerBundle:SekolikoRole';
     const Sekoliko_CMS = 'MetierManagerBundle:SekolikoCms';
     const Sekoliko_POST = 'MetierManagerBundle:SekolikoPost';
+    const Sekoliko_ETABLISSEMENT = 'MetierManagerBundle:TzSekolikoEtablissement';
     const Sekoliko_CATEGORY_POST = 'MetierManagerBundle:SekolikoCategoryPost';
     const Sekoliko_SEO = 'MetierManagerBundle:SekolikoSeo';
     const Sekoliko_POLE = 'MetierManagerBundle:SekolikoPole';
     const Sekoliko_JOUR_FERIE = 'MetierManagerBundle:SekolikoJourFerie';
     const Sekoliko_HORAIRE = 'MetierManagerBundle:SekolikoHoraire';
+    const Sekoliko_PERSONNEL = 'MetierManagerBundle:SekolikoPersonnel';
 }
