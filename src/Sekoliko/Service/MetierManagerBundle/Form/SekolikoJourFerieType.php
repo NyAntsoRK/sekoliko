@@ -28,12 +28,13 @@ class SekolikoJourFerieType extends AbstractType
                 'required' => true
             ))
 
+
             ->add('jrFerDate', DateTimeType::class, array(
                 'label'  => "Date",
                 'widget' => 'single_text',
                 'format' => 'dd/MM/yyyy',
                 'attr'   => array(
-                    'class'         => 'kl-datetimepicker-simple',
+                    'class'         => 'sk-datetimepicker-simple',
                     'required'      => true,
                     'autocomplete'  => 'off'
                 )

@@ -1,0 +1,24 @@
+etablissement_index:
+  path:     /
+  defaults: { _controller: "AdminBundle:TzEtablissement:index" }
+  methods:  GET
+
+etablissement_new:
+  path:     /new
+  defaults: { _controller: "AdminBundle:TzEtablissement:new" }
+  methods:  [GET, POST]
+
+etablissement_edit:
+  path:     /{id}/edit
+  defaults: { _controller: "AdminBundle:TzEtablissement:edit" }
+  methods:  [GET, POST]
+
+etablissement_update:
+  path:     /{id}/update
+  defaults: { _controller: "AdminBundle:TzEtablissement:update" }
+  methods:  [POST, PUT]
+
+etablissement_delete:
+  path:     /{id}/delete
+  defaults: { _controller: "AdminBundle:TzEtablissement:delete" }
+  methods:  [GET, DELETE]

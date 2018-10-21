@@ -26,7 +26,7 @@ class SekolikoHoraireType extends AbstractType
                 'widget' => 'single_text',
                 'format' => 'dd/MM/yyyy',
                 'attr'   => array(
-                    'class'         => 'kl-datetimepicker-date-debut-saison',
+                    'class'         => 'sk-datetimepicker-date-debut-saison',
                     'required'      => true,
                     'autocomplete'  => 'off'
                 )
@@ -36,7 +36,7 @@ class SekolikoHoraireType extends AbstractType
                 'widget' => 'single_text',
                 'format' => 'dd/MM/yyyy',
                 'attr'   => array(
-                    'class'         => 'kl-datetimepicker--date-fin-saison',
+                    'class'         => 'sk-datetimepicker--date-fin-saison',
                     'required'      => true,
                     'autocomplete'  => 'off'
                 )
@@ -46,7 +46,7 @@ class SekolikoHoraireType extends AbstractType
                 'widget'   => 'single_text',
                 'format'   => 'H:m',
                 'attr'     => array(
-                    'class'         => 'kl-datetimepicker-heure-debut',
+                    'class'         => 'sk-datetimepicker-heure-debut',
                     'required'      => true,
                     'autocomplete'  => 'off'
                 )
@@ -56,7 +56,7 @@ class SekolikoHoraireType extends AbstractType
                 'widget'   => 'single_text',
                 'format'   => 'H:m',
                 'attr'     => array(
-                    'class'        => 'kl-datetimepicker-heure-fin',
+                    'class'        => 'sk-datetimepicker-heure-fin',
                     'required'     => true,
                     'autocomplete' => 'off'
                 )

@@ -18,6 +18,12 @@ sekoliko_horaire:
     resource: "@AdminBundle/Resources/config/routing/horaire.yml"
     prefix:   /horaire
 
+<<<<<<< HEAD
 sekoliko_personnelle:
   resource: "@AdminBundle/Resources/config/routing/admin.yml"
   prefix:   /personnelle
+=======
+sekoliko_etablissement:
+  resource: "@AdminBundle/Resources/config/routing/etablissement.yml"
+  prefix:   /etablissement
+>>>>>>> 46ca44504154836f2ef915e62d8cd203c95197d3

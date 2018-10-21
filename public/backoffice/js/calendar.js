@@ -22,7 +22,7 @@ $('#events-list .fc-event').each(function() {
 /*
  * Init Calendar
  */
-$('.kl-calendar').fullCalendar({
+$('.sk-calendar').fullCalendar({
     height: 400,
     header: {
         left: 'prev,next today',
