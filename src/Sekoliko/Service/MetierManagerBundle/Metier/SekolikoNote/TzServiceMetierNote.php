@@ -1,13 +1,18 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: nyantso
+ * Date: 21/10/18
+ * Time: 06:08
+ */
 
 namespace App\Sekoliko\Service\MetierManagerBundle\Metier\SekolikoNote;
 
-use App\Sekoliko\Service\MetierManagerBundle\Utils\EntityName;
-use Doctrine\ORM\EntityManager;
-use Symfony\Component\DependencyInjection\Container;
-use Symfony\Component\HttpFoundation\Request;
-
 /**
- * Class SekolikoNote
+ * Class TzServiceMetierNote
  * @package App\Sekoliko\Service\MetierManagerBundle\Metier\SekolikoNote
  */
+
+class TzServiceMetierNote{
+
+}
