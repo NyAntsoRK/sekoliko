@@ -39,7 +39,11 @@
         "symfony/maker-bundle": "^1.8",
         "symfony/phpunit-bridge": "^4.0",
         "symfony/profiler-pack": "*",
+<<<<<<< HEAD
         "symfony/web-server-bundle": "^4.0"
+=======
+        "symfony/web-server-bundle": "^4.1"
+>>>>>>> 68738642833f61c35545a0fe38dda9369e023be6
     },
     "config": {
         "preferred-install": {
