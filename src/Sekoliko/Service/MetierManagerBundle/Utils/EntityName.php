@@ -17,4 +17,5 @@ class EntityName
     const Sekoliko_POLE = 'MetierManagerBundle:SekolikoPole';
     const Sekoliko_JOUR_FERIE = 'MetierManagerBundle:SekolikoJourFerie';
     const Sekoliko_HORAIRE = 'MetierManagerBundle:SekolikoHoraire';
+    const Sekoliko_PERSONNEL = 'MetierManagerBundle:SekolikoPersonnel';
 }

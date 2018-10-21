@@ -17,3 +17,7 @@ sekoliko_jour_ferie:
 sekoliko_horaire:
     resource: "@AdminBundle/Resources/config/routing/horaire.yml"
     prefix:   /horaire
+
+sekoliko_personnelle:
+  resource: "@AdminBundle/Resources/config/routing/admin.yml"
+  prefix:   /personnelle
