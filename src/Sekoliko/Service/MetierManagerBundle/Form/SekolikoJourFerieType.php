@@ -33,7 +33,7 @@ class SekolikoJourFerieType extends AbstractType
                 'widget' => 'single_text',
                 'format' => 'dd/MM/yyyy',
                 'attr'   => array(
-                    'class'         => 'kl-datetimepicker-simple',
+                    'class'         => 'sk-datetimepicker-simple',
                     'required'      => true,
                     'autocomplete'  => 'off'
                 )

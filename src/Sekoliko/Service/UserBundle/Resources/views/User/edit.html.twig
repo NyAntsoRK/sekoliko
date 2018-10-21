@@ -50,7 +50,7 @@
                                                 </a>
                                             </span>
                                             <div class="image-container-block">
-                                                <img class="img-vignette img-responsive kl-image-user-edit" src="{{ user.usrPhoto }}" />
+                                                <img class="img-vignette img-responsive sk-image-user-edit" src="{{ user.usrPhoto }}" />
                                             </div>
                                         </div>
                                     {% endif %}
@@ -95,13 +95,13 @@
         $(function () {
             // Enlever l'obligation du champ mot de passe
             $('#sekoliko_userbundle_user_plainPassword_first, #sekoliko_userbundle_user_plainPassword_second').removeAttr('required');
-            $('.kl-choisen-fonction' ).removeAttr('required');
+            $('.sk-choisen-fonction' ).removeAttr('required');
             $('#sekoliko_fonction_date_debut1' ).removeAttr('required');
         });
 
         //scroll in error fields
         $('html, body').animate({
-            scrollTop: $('.kl-error-message').offset().top
+            scrollTop: $('.sk-error-message').offset().top
         }, 'slow');
 
     </script>
