@@ -17,14 +17,14 @@ function deleteFile(_id_file, _this) {
                     success: function(_response) {
                         if (_response.success) {
                             _this.parents('.blc-image').remove();
-                            bootbox.alert("Suppression avec succès !").find('.modal-body').addClass('kl-modal-bootbox');
+                            bootbox.alert("Suppression avec succès !").find('.modal-body').addClass('sk-modal-bootbox');
                         } else {
                             if (_response.message) {
-                                bootbox.alert(_response.message).find('.modal-body').addClass('kl-modal-bootbox');
+                                bootbox.alert(_response.message).find('.modal-body').addClass('sk-modal-bootbox');
                             }
                         }
                     }
                 });
             }
-    }).find('.modal-body').addClass('kl-modal-bootbox');;
+    }).find('.modal-body').addClass('sk-modal-bootbox');;
 }

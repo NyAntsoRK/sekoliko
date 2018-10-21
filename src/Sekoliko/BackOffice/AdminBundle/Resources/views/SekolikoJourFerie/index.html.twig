@@ -31,11 +31,11 @@
                         <div class="card">
                             <div class="card-header card-header-icon" data-background-color="purple">
                                 <div class="list-count">
-                                    <span class="kl-title-count"></span>
+                                    <span class="sk-title-count"></span>
                                 </div>
                             </div>
                             {# Bouton création #}
-                            <div class="row kl-add-btn-top-list">
+                            <div class="row sk-add-btn-top-list">
                                 <a href="{{ path('jour_ferie_new') }}" onclick=";">
                                     <button class="btn btn-primary">
                                         <i class="fa fa-plus"></i>
@@ -60,7 +60,7 @@
 
                                         {# Bouton suppression #}
                                         <a href="#">
-                                            <button type="submit" name="_group_delete" class="btn btn-danger kl-delete-btn red">
+                                            <button type="submit" name="_group_delete" class="btn btn-danger sk-delete-btn red">
                                                 <i class="fa fa-trash"></i>
                                                 {{ 'bo.button.suppression'| trans }}
                                             </button>
@@ -83,9 +83,9 @@
                 <div class="col s12">
                     <div class="box">
                         <div class="box-header">
-                            <div class="kl-list-count">
-                                <span class="kl-title-count-text"> {{ 'bo.index.total'| trans }} </span>
-                                <span class="kl-title-count"></span>
+                            <div class="sk-list-count">
+                                <span class="sk-title-count-text"> {{ 'bo.index.total'| trans }} </span>
+                                <span class="sk-title-count"></span>
                             </div>
                         </div>
 
@@ -111,7 +111,7 @@
                 "bServerSide": true,
                 "sAjaxSource": "{{ path('jour_ferie_list_ajax') }}",
                 "oLanguage": {
-                    "sProcessing": "<i class='fa fa-spinner fa-spin fa-2x kl-spin-ajax'></i>",
+                    "sProcessing": "<i class='fa fa-spinner fa-spin fa-2x sk-spin-ajax'></i>",
                     "oPaginate": {
                         "sPrevious": "Précédente", // This is the link to the previous page
                         "sNext": "Suivante", // This is the link to the next page
@@ -125,7 +125,7 @@
                 },
                 "processing" : true,
                 "drawCallback": function (settings) {
-                    $('.kl-title-count').html(settings.json.iTotalRecords);
+                    $('.sk-title-count').html(settings.json.iTotalRecords);
                     $('.tooltipped').tooltip();
                 }
             });

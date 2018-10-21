@@ -4,13 +4,13 @@
 
             {% set input = '<input type="checkbox" value="' ~ jour_ferie.id ~ '" name="delete[]" />' %}
 
-            {% set action = '<div class="kl-td">
-                                <a class="btn green kl-button-index tooltipped"
+            {% set action = '<div class="sk-td">
+                                <a class="btn green sk-button-index tooltipped"
                                    href="' ~ path('jour_ferie_edit', { 'id': jour_ferie.id }) ~ '"
                                    data-position="top" data-delay="50" data-tooltip="' ~ 'bo.index.td.title.modifier'|trans ~ '">
                                     <i class="fa fa-edit"></i>
                                 </a>
-                                <a class="btn red kl-button-index kl-remove-elt red tooltipped"
+                                <a class="btn red sk-button-index sk-remove-elt red tooltipped"
                                    href="' ~ path('jour_ferie_delete', { 'id': jour_ferie.id }) ~ '"
                                    data-position="top" data-delay="50" data-tooltip="' ~ 'bo.index.td.title.supprimer'|trans ~ '">
                                     <i class="fa fa-trash"></i>

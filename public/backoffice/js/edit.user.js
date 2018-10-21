@@ -20,7 +20,7 @@ $(function () {
     showContentFonction(1);
 
     /** afficher une autre fonction */
-    $('.kl-fct-show-content').click(function (e) {
+    $('.sk-fct-show-content').click(function (e) {
         e.preventDefault();
 
         var cible_id = $(this).data('current-id') + 1;
