@@ -8,21 +8,21 @@
         {% set action = '' %}
 
             {% set action =  '
-            <div class="kl-td">
-                           <a class="btn grey btn-info kl-show-details tooltipped"
+            <div class="sk-td">
+                           <a class="btn grey btn-info sk-show-details tooltipped"
                             href="' ~ path('user_show', { 'id': user.id }) ~ '"
                             data-show-title="Details utilisateur"
                             data-position="top" data-delay="50" data-tooltip="details utilisateur"
                            >
                             <i class="fa fa-eye"></i>
                         </a>
-                         <a class="btn green btn-success kl-button-index tooltipped"
+                         <a class="btn green btn-success sk-button-index tooltipped"
                            href="' ~ path('user_edit', { 'id': user.id }) ~ '"
                            data-position="top" data-delay="50" data-tooltip="' ~ 'bo.index.td.title.modifier'|trans ~ '"
                            >
                             <i class="fa fa-edit"></i>
                         </a>
-                        <a class="btn red btn-danger kl-button-index kl-remove-elt red tooltipped"
+                        <a class="btn red btn-danger sk-button-index sk-remove-elt red tooltipped"
                            data-position="top" data-delay="50" data-tooltip="' ~ 'bo.index.td.title.supprimer'|trans ~ '"
                            href="' ~ path('user_delete', { 'id': user.id }) ~ '">
                             <i class="fa fa-trash"></i>

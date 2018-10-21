@@ -3,26 +3,26 @@
  */
 $(function() {
     // Plugins select2
-    $(".kl-select2").select2();
+    $(".sk-select2").select2();
 
     /* Datetimepicker */
-    $(".kl-datetimepicker").datetimepicker({
+    $(".sk-datetimepicker").datetimepicker({
         locale: 'fr',
         format: 'DD/MM/YYYY HH:mm'
     });
 
     /* Datepicker */
-    $(".kl-datepicker").datetimepicker({
+    $(".sk-datepicker").datetimepicker({
         locale: 'fr',
         format: 'DD/MM/YYYY'
     });
 
     /* Confirmation suppression */
-    $(document).on('click','.kl-delete-btn-custom, .kl-remove-elt', function(event) {
+    $(document).on('click','.sk-delete-btn-custom, .sk-remove-elt', function(event) {
         if (!confirm('Etes vous sûr de vouloir supprimer ?'))
             return false;
     });
-    $('form .kl-delete-btn').click(function(event) {
+    $('form .sk-delete-btn').click(function(event) {
         var length_checked = $('[name="delete[]"]:checked').length;
         if (length_checked == 0) {
             alert('Veuillez sélectionner un élément à supprimer');
@@ -45,28 +45,28 @@ $(function() {
     });
 
     /** reglage datepicker debut et fin sans heure */
-    $('.kl-datetimepicker-debut').datetimepicker({
+    $('.sk-datetimepicker-debut').datetimepicker({
         format : 'DD/MM/YYYY',
         locale : 'fr',
         useCurrent: false,
     }).on('dp.change', function (e) {
         var min_date = new Date(e.date.valueOf());
 
-        $('.kl-datetimepicker-fin').datetimepicker('minDate', min_date);
+        $('.sk-datetimepicker-fin').datetimepicker('minDate', min_date);
     });
 
-    $('.kl-datetimepicker-fin').datetimepicker({
+    $('.sk-datetimepicker-fin').datetimepicker({
         format : 'DD/MM/YYYY',
         locale : 'fr',
         useCurrent: false,
     }).on('dp.change', function (e) {
         var max_date = new Date(e.date.valueOf());
 
-        $('.kl-datetimepicker-debut').datetimepicker('maxDate', max_date);
+        $('.sk-datetimepicker-debut').datetimepicker('maxDate', max_date);
     });
 
     /** reglage datepicker debut et fin avec heure */
-    $('.kl-datetimepicker-datetime-debut').datetimepicker({
+    $('.sk-datetimepicker-datetime-debut').datetimepicker({
         format : 'DD/MM/YYYY H:mm',
         locale : 'fr',
         useCurrent: false,
@@ -77,10 +77,10 @@ $(function() {
     }).on('dp.change', function (e) {
         var min_date = new Date(e.date.valueOf());
 
-        $('.kl-datetimepicker-datetime-fin').datetimepicker('minDate', min_date);
+        $('.sk-datetimepicker-datetime-fin').datetimepicker('minDate', min_date);
     });
 
-    $('.kl-datetimepicker-datetime-fin').datetimepicker({
+    $('.sk-datetimepicker-datetime-fin').datetimepicker({
         format : 'DD/MM/YYYY H:mm',
         locale : 'fr',
         useCurrent: false,
@@ -91,21 +91,21 @@ $(function() {
     }).on('dp.change', function (e) {
         var max_date = new Date(e.date.valueOf());
 
-        $('.kl-datetimepicker-datetime-debut').datetimepicker('maxDate', max_date);
+        $('.sk-datetimepicker-datetime-debut').datetimepicker('maxDate', max_date);
     });
 
     /** reglage datepicker debut et fin avec heure additionnel user */
-    $('.kl-datetimepicker-datetime-debut-usr-adt').datetimepicker({
+    $('.sk-datetimepicker-datetime-debut-usr-adt').datetimepicker({
         format : 'DD/MM/YYYY H:mm',
         locale : 'fr',
         useCurrent: true
     }).on('dp.change', function (e) {
         var min_date = new Date(e.date.valueOf());
-        $('.kl-datetimepicker-datetime-fin-usr-adt').datetimepicker('minDate', min_date);
+        $('.sk-datetimepicker-datetime-fin-usr-adt').datetimepicker('minDate', min_date);
 
     });
 
-    $('.kl-datetimepicker-datetime-fin-usr-adt').datetimepicker({
+    $('.sk-datetimepicker-datetime-fin-usr-adt').datetimepicker({
         format : 'DD/MM/YYYY H:mm',
         locale : 'fr',
         useCurrent: true
@@ -114,20 +114,20 @@ $(function() {
     });
 
     /** reglage datepicker debut et fin avec heure horaire de travaille */
-    $('.kl-datetimepicker-date-debut-saison').datetimepicker({
+    $('.sk-datetimepicker-date-debut-saison').datetimepicker({
         format : 'DD/MM/YYYY H:mm',
         locale : 'fr',
         useCurrent: true
     }).on('dp.change', function (e) {
         var min_date = new Date(e.date.valueOf());
-        $('.kl-datetimepicker--date-fin-saison').datetimepicker('minDate', min_date);
-        $('.kl-datetimepicker--date-fin-saison').datetimepicker({
+        $('.sk-datetimepicker--date-fin-saison').datetimepicker('minDate', min_date);
+        $('.sk-datetimepicker--date-fin-saison').datetimepicker({
             zIndex: 2048,
         });
 
     });
 
-    $('.kl-datetimepicker--date-fin-saison').datetimepicker({
+    $('.sk-datetimepicker--date-fin-saison').datetimepicker({
         format : 'DD/MM/YYYY',
         locale : 'fr',
         useCurrent: true
@@ -135,41 +135,41 @@ $(function() {
         var min_date = new Date(e.date.valueOf());
     });
 
-    $('.kl-datetimepicker-heure-debut').datetimepicker({
+    $('.sk-datetimepicker-heure-debut').datetimepicker({
         format : 'H:mm',
         locale : 'fr',
         useCurrent: true
     }).on('dp.change', function (e) {
         var min_date = new Date(e.date.valueOf());
-        $('.kl-datetimepicker-heure-fin').datetimepicker('minTime', min_date);
+        $('.sk-datetimepicker-heure-fin').datetimepicker('minTime', min_date);
     });
 
-    $('.kl-datetimepicker-heure-fin').datetimepicker({
+    $('.sk-datetimepicker-heure-fin').datetimepicker({
         format : 'H:mm',
         locale : 'fr',
         useCurrent: true
     }).on('dp.change', function (e) {
         var min_date = new Date(e.date.valueOf());
-        $('.kl-datetimepicker-heure-debut').datetimepicker('minTime', min_date);
+        $('.sk-datetimepicker-heure-debut').datetimepicker('minTime', min_date);
     });
 
 
     /** reglage datepicker simple avec heure */
-    $('.kl-datetimepicker-attribution').datetimepicker({
+    $('.sk-datetimepicker-attribution').datetimepicker({
         format : 'DD/MM/YYYY H:mm',
         locale : 'fr',
         useCurrent: false
     });
 
     /** reglage datepicker simple sans heure */
-    $('.kl-datetimepicker-simple').datetimepicker({
+    $('.sk-datetimepicker-simple').datetimepicker({
         format : 'DD/MM/YYYY',
         locale : 'fr',
         useCurrent: false,
     });
 
     /** afficher le detail d un entite */
-    $(document).on('click','.kl-show-details', function (e) {
+    $(document).on('click','.sk-show-details', function (e) {
         e.preventDefault();
 
         /** recuperer l url */
@@ -180,10 +180,10 @@ $(function() {
 
         /** mettre le titre du modal */
         var show_title = $(this).data('show-title');
-        $('.kl-show-entity-title').html(show_title ? show_title : 'Visualisation');
+        $('.sk-show-entity-title').html(show_title ? show_title : 'Visualisation');
 
         /** afficher le spinner avant le reponse */
-        $('#id-show-content-body').html('<i class="fa fa-spinner fa-spin fa-2x kl-spiner"></i>');
+        $('#id-show-content-body').html('<i class="fa fa-spinner fa-spin fa-2x sk-spiner"></i>');
 
         $.ajax({
             url: url_show,
@@ -204,8 +204,8 @@ function setErrorClass($this){
 }
 
 /** mettre le champ requis et readonly */
-var datepicker_selector = '.kl-datetimepicker-simple, .kl-datetimepicker-attribution, .kl-datetimepicker-datetime-fin';
-datepicker_selector += ' .kl-datetimepicker-datetime-debut, .kl-datetimepicker-debut, .kl-datetimepicker-fin';
+var datepicker_selector = '.sk-datetimepicker-simple, .sk-datetimepicker-attribution, .sk-datetimepicker-datetime-fin';
+datepicker_selector += ' .sk-datetimepicker-datetime-debut, .sk-datetimepicker-debut, .sk-datetimepicker-fin';
 $(datepicker_selector).on('keydown paste', function(e){
     e.preventDefault();
 });
@@ -220,4 +220,4 @@ $('form[data-toggle="validator"]').on('submit', function (e) {
 });
 $('.box-footer').addClass('text-right');
 $('.box-footer').find('.btn').removeClass('pull-left');
-$('.table').addClass('kl-table');
+$('.table').addClass('sk-table');
