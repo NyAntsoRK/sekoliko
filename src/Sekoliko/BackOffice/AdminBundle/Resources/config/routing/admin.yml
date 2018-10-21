@@ -1,0 +1,4 @@
+personnelle_index:
+    path:     /
+    defaults: { _controller: "AdminBundle:SekolikoPersonnel:index" }
+    methods:  GET

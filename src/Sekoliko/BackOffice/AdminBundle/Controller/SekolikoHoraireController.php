@@ -80,7 +80,7 @@ class SekolikoHoraireController extends Controller
             $_product_result,
             $_template
         );
-        $_response = new Response($_content);
+        $_response = new Response($_coindexntent);
         $_response->headers->set('Content-Type', 'application/json');
 
         return $_response;

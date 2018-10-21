@@ -51,6 +51,11 @@ services:
         arguments: [ "@doctrine.orm.entity_manager","@service_container"]
         public: true
 
+    sekoliko.manager.personnel:
+        class: App\Sekoliko\Service\MetierManagerBundle\Metier\SekolikoPersonnel\ServiceSekolikoPersonnel
+        arguments: [ "@doctrine.orm.entity_manager", "@service_container" ]
+        public: true
+
     sekoliko.manager.etablissement:
       class: App\Sekoliko\Service\MetierManagerBundle\Metier\SekolikoEtablissement\TzServiceMetierEtablissement
       arguments: [ "@doctrine.orm.entity_manager","@service_container"]
