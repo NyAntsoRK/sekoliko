@@ -28,6 +28,7 @@ class SekolikoJourFerieType extends AbstractType
                 'required' => true
             ))
 
+
             ->add('jrFerDate', DateTimeType::class, array(
                 'label'  => "Date",
                 'widget' => 'single_text',

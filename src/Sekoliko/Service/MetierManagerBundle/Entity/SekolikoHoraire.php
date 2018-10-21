@@ -23,6 +23,15 @@ class SekolikoHoraire
      */
     private $id;
 
+
+//    /**
+//     * @var integer
+//     *
+//     * @ORM\Column(name="_tz_sekoliko_admin_nom",type="string",length=200,)
+//     */
+//    private  $_tz_sekoliko_admin_nom;
+
+
     /**
      * @var \DateTime
      *

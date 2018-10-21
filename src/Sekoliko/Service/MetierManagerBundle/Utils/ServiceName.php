@@ -8,6 +8,7 @@ namespace App\Sekoliko\Service\MetierManagerBundle\Utils;
  */
 class ServiceName
 {
+    const SRV_METIER_ETABLISSEMENT = 'sekoliko.manager.etablissement';
     const SRV_METIER_UTILS = 'sekoliko.manager.utils';
     const SRV_METIER_PLANNING = 'sekoliko.manager.planning';
     const SRV_METIER_USER = 'sekoliko.manager.user';
