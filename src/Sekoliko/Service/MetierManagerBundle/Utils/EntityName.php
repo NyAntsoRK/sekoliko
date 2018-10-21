@@ -10,6 +10,7 @@ class EntityName
 {
     const USER = 'UserBundle:User';
     const Sekoliko_USER_ROLE = 'MetierManagerBundle:SekolikoRole';
+    const Sekoliko_ETUDIANT = 'MetierManagerBundle:TzSekolikoEtudiant';
     const Sekoliko_CMS = 'MetierManagerBundle:SekolikoCms';
     const Sekoliko_POST = 'MetierManagerBundle:SekolikoPost';
     const Sekoliko_ETABLISSEMENT = 'MetierManagerBundle:TzSekolikoEtablissement';
