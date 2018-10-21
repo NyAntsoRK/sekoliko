@@ -42,8 +42,12 @@
 <<<<<<< HEAD
         "symfony/web-server-bundle": "^4.0"
 =======
+<<<<<<< HEAD
+        "symfony/web-server-bundle": "^4.0"
+=======
         "symfony/web-server-bundle": "^4.1"
 >>>>>>> 68738642833f61c35545a0fe38dda9369e023be6
+>>>>>>> 4221c06b421d3309911d1815f48895e8f32f4411
     },
     "config": {
         "preferred-install": {

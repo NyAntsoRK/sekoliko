@@ -5,10 +5,14 @@
         "This file is @generated automatically"
     ],
 <<<<<<< HEAD
+    "content-hash": "85a3a6018743bce7e7ff92ad6b2fc336",
+=======
+<<<<<<< HEAD
     "content-hash": "2388dfa68ea1d3835d5ebcb3d3695e63",
 =======
     "content-hash": "880b9bc763c390efd6b09993300db068",
 >>>>>>> 68738642833f61c35545a0fe38dda9369e023be6
+>>>>>>> 4221c06b421d3309911d1815f48895e8f32f4411
     "packages": [
         {
             "name": "beberlei/DoctrineExtensions",
